@@ -1,0 +1,47 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.pytype/
+.coverage
+htmlcov/
+
+# Packaging and virtual environments
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+*.whl
+.venv/
+venv/
+ENV/
+env/
+
+# Local/editor/system files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.local
+
+# Keep the public repository as a skeleton for now.
+pyproject.toml
+uv.lock
+
+src/*
+!src/bicycle6d/
+src/bicycle6d/*
+!src/bicycle6d/.gitkeep
+
+outputs/*
+!outputs/bicycle6d/
+outputs/bicycle6d/*
+!outputs/bicycle6d/.gitkeep
