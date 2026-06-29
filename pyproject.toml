@@ -1,0 +1,27 @@
+[project]
+name = "dob-hocbf"
+version = "0.1.0"
+description = "State-dependent DOB-HOCBF experiments for dynamic-bicycle obstacle avoidance"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "osqp",
+    "scipy",
+]
+
+[project.scripts]
+dob-hocbf-bicycle6d = "bicycle6d.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["bicycle6d*"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
